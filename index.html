@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC-Movies</title>
+    <link rel="stylesheet" href="./css/styleEscritorio.css">
+    <script src="https://kit.fontawesome.com/a99f686c7c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <a class="anclaLogo" href="#">
+                <i class="fas fa-film"></i>
+                <span>CAC-Movies</span>
+            </a>
+            <ul class="listaNav">
+                <li class ="listaItem">
+                    <a class="linkNav" href="#tendencias"> Tendencias</a>
+                </li>
+                <li class ="listaItem">
+                    <a class="linkNav" href="./pages/registro.html">Registrarse</a>
+                </li>
+                <li class ="listaItem">
+                    <a class="linkNavInicioSesion" href="./pages/inicioSesion.html">Iniciar sesión</a>
+                </li>
+            </ul>
+        </nav>  
+    </header>
+    <main id="main" class="main">
+        <section class="seccionPrincipal" >
+            <h1 class="tituloPrincipal">
+                Películas y series ilimitadas
+                <br>
+                en un solo lugar
+            </h1>
+            <h2 class="subtituloPrincipal">
+                Disfruta donde quieras
+                <br>
+                Cancela en cualquier momento
+            </h2>
+            <a class="btnRegistro" href="./pages/registro.html"> Registrarse</a>
+        </section>
+        <section class="buscadorPeliculas">
+            <h2 class="tituloSeccion">¿Qué estas buscando para ver?</h2>
+            <form class="buscadorPelis">
+             <input class="inputBuscador" type="text" placeholder="Buscar..." id="buscar"> 
+             <input class="btnBuscador" type="submit" value="Buscar"> 
+            </form>
+        </section>
+        <hr>
+        <section id="tendencias" class="pelisTendencia">
+            <h3 class="tituloSeccion"> Las tendencias de hoy</h3> 
+            <div class="pelis" id="tendenciasContainer">
+                <div class="pelis">
+                    <a href="./pages/detalle.html">
+                        <div class="pelicula"> 
+                            <img src="" alt="">
+                            <div class="tituloPeli">
+                                <h4> titulo pelicula </h4>
+                            </div>                    
+                        </div>
+                    </a>
+                </div> 
+            </div>
+            <button class="btn anterior">Anterior</button>
+            <button class="btn siguiente">Siguiente</button>      
+        </section>
+        <hr>
+        <section class="pelisAclamadas">
+          <h3 class="tituloSeccion">Las más aclamadas</h3>
+          <div class="aclamadas" id="aclamadasContainer">
+            <div class="peliculaItem">
+                <img class="imgAclamada" src="" alt="">
+            </div>
+          </div>  
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="listaNav">
+                <li class ="listaItem">
+                    <a class="linkNav" href> Términos y condiciones</a>
+                </li>
+                <li class ="listaItem">
+                    <a class="linkNav" href>Preguntas frecuentes</a>
+                </li>
+                <li class ="listaItem">
+                    <a class="linkNav" href>Ayuda</a>
+                </li>
+                <li class ="listaItem">
+                    <a class="linkNav adminPelis" href>Administrador de películas</a>
+                </li>
+            </ul>  
+        </nav>
+        <a href="#main" class="flechaArriba">
+            <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+</body>
+</html>

@@ -167,57 +167,68 @@ body{
     width:80%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 10px;}
+    margin-top: 10px;
+    .tituloSeccion{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;}
+    .pelis{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:60px;
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            .pelicula{
+                width:200px;
+                height: 300px;
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                transition: all 0.5s ease;}
+            .imgTendencia{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;}
+            .tituloPeli{
+                z-index: 2;
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                max-width: 20rem;
+                width: 100%;
+                transform: translateY(-50%) translateX(-50%); 
+                h4 {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    opacity: 0;
+                    margin-bottom: 0.5rem;
+                    letter-spacing: 0.1rem;
+                    transition: opacity 0.5s ease-in-out;}     
 
-.tituloSeccion{
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 40px;}
+            } 
+            &:hover{
+                box-shadow: 0 0 30px #9f3648cd;
+                transform: scale(0.9);}
+            
+            &:hover .tituloPeli{
+                width: 100%;
+                height: 100%;
+                backdrop-filter: blur(20px);
+                display: flex;
+                justify-content: center;
+                align-items: center;} 
 
-.pelis{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap:60px;}
-   
-.pelis a{
-        text-decoration: none;
-        color: #ffffff;}
-
-.pelicula{
-    width:200px;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: all 0.5s ease;}
-
-.imgTendencia{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;}
-
-.tituloPeli{
-    z-index: 2;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    max-width: 20rem;
-    width: 100%;
-    transform: translateY(-50%) translateX(-50%);}   
-
-.tituloPeli h4 {
-    font-size: 1.6rem;
-    font-weight: bold;
-    opacity: 0;
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.1rem;
-    transition: opacity 0.5s ease-in-out;}
-
-.tituloPeli:hover{
-    box-shadow: 0 0 30px #9f3648cd;
-    transform: scale(0.9);}
+            &:hover h4 {
+                width: 100%;
+                padding: 0.5rem;
+                opacity: 1;}      
+            }
+        }           
+} 
 
 .btn{
     border: 1px solid white;

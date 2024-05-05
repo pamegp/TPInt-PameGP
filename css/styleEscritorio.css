@@ -227,8 +227,7 @@ body{
                 padding: 0.5rem;
                 opacity: 1;}      
             }
-        }           
-} 
+        } } 
 
 .btn{
     border: 1px solid white;
@@ -283,3 +282,94 @@ body{
     height: 95%;
     object-fit: cover;}
 
+.footer{
+    background-color:#9f3647;
+    color:#ffffff;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.administradorPeliculas{
+    background-color: #181419;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;}
+
+.flechaArriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;}
+
+hr{
+    border: 1px solid #9f3647;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;}
+
+.bodyRegistrarse{
+    height: 100vh;
+    background:linear-gradient(to right top, #24242473,#24242473),url("../assets/img/bg-register.jpg");
+    background-size: cover;
+    background-position: center;}
+
+.headerRegistrarse{
+    color:#ffffff;
+    height: 8vh;
+    padding:30px;}
+
+.seccionRegistrarse{
+    background-color:rgb(42, 42, 42);
+    width: 30%;
+    margin:0 auto;
+    border-radius: 5px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size:1.2rem;}
+
+.tituloRegistrarse{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;}
+   
+form{
+    width: 100%;
+    padding:40px;}
+
+.inputRegistrarse:not(.check,.boton),select{
+    width: 85%;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 2px solid #9f3647;
+    background-color: #333333;
+    outline: none;
+    color:rgb(255, 255, 255);}
+
+.botonRegistrarse{
+    width: 85%;
+    box-sizing: content-box;
+    background-color:#9f3647;
+    border: 2px solid #9f3647;
+    color: #ffffff;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;}
+
+.ayuda{
+    margin-top:40px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #787878;
+    font-weight:400;}
+        
+           

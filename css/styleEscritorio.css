@@ -354,6 +354,23 @@ form{
     outline: none;
     color:rgb(255, 255, 255);}
 
+.error input:not(.check,.boton),.error select{
+    border: 1px solid #ff0000;}
+    
+.textoError{
+    color: #ff0000;
+    font-size: 0.8rem;
+    margin-top:0px;
+    margin-bottom: 10px;}
+
+.terminos{
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    .textoCheck{
+        margin-left: 10px;}}
+
 .botonRegistrarse{
     width: 85%;
     box-sizing: content-box;
